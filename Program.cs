@@ -82,7 +82,7 @@ namespace Magic8Ball
             }
             Console.WriteLine("Thank you for using the Magic 8 Ball!!");
             Console.WriteLine("Press anything to exit");
-            Console.ReadLine();
+            Console.ReadKey();
         }
     }
 }
