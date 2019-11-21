@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 
 namespace Magic8Ball
@@ -7,10 +7,10 @@ namespace Magic8Ball
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("-Hello! Welcome to the Magic 8 Ball, it I can see the future! \n-However... I can only answer yes or no questions... \n-What is your question?\n");
+            Console.WriteLine("-Hello! Welcome to the Magic 8 Ball, I can see the future! \n-However... I can only answer yes or no questions... \n-What is your question?\n");
             Console.ReadLine();
 
-            var gate = 0;
+            int gate = 0;
 
             while (gate == 0)
             {
@@ -24,6 +24,9 @@ namespace Magic8Ball
                 {
                     case 0:
                         Console.WriteLine("Definetly NOT! TOO BAD BUDDY!");
+                        break;
+                    case 1:
+                        Console.WriteLine("YASSSSSSS!");
                         break;
                     case 2:
                         Console.WriteLine("Ooooh, Yes! Definetly");
@@ -66,7 +69,7 @@ namespace Magic8Ball
                 }
 
                 Console.WriteLine("\n-Would you like to ask another question? y/n");
-                var keying = Console.ReadLine();
+                string keying = Console.ReadLine();
 
                 if (keying == "n")
                 {
@@ -83,6 +86,7 @@ namespace Magic8Ball
             Console.WriteLine("Thank you for using the Magic 8 Ball!!");
             Console.WriteLine("Press anything to exit");
             Console.ReadKey();
+            
         }
     }
 }
